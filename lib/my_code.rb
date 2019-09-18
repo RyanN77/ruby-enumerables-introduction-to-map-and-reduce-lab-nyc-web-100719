@@ -19,7 +19,7 @@ def reduce_to_total(source_array, starting_point = 0)
 end
 
 def reduce_to_all_true(source_array)
-   return source_array.reduce{ |x, point| !!x || !!point = true } 
+   return source_array.reduce{ |x, point| !!x && !!point ? true : false } 
 end
 
 def reduce_to_any_true(source_array)
